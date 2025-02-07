@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>shabondama</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ショップページ">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="home">
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Sample Gallery" height="1000px" width="3000px"></a></h1>
+<!--スライドショー-->
+<aside id="mainimg">
+<img src="images/1.jpg" alt="" class="slide0">
+<img src="images/1.jpg" alt="" class="slide1">
+<img src="images/2.jpg" alt="" class="slide2">
+<img src="images/3.jpg" alt="" class="slide3">
+<img src="images/123_kazari.png" alt="" class="kazari">
+</aside>
+</header>
+
+<!--開閉メニュー-->
+<nav id="menubar">
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+
+<div id="contents">
+
+<section>
+
+<h2>pickup<br><span></span></h2>
+
+
+
+  <!-- ////////// 商品  エリア ////////// -->
+  <h2 class="title">NEWアイテム</h2>
+  <div class="box_wrapper">
+    <section class="box_item NEW_icon">
+      <a href="maza.html">
+        <div class="image_wrapper"><img src="images/maza-wanpi.jpg" alt="" /></div>
+        <h3>マザーワンピース</h3>
+        <p>￥42,500</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="mahou.html">
+        <div class="image_wrapper"><img src="images/mahou.jpg" a alt="" /></div>
+        <h3>魔法少女のワンピース</h3>
+        <p>￥39,800</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="seigi.html">
+        <div class="image_wrapper"><img src="images/seigi.jpg" alt="" /></div>
+        <h3>わたしの正義ワンピース</h3>
+        <p>￥35,000</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="item001.html">
+        <div class="image_wrapper"><img src="images/otonano.jpg" alt="" /></div>
+        <h3>大人のプリンセスワンピース</h3>
+        <p>￥33,000</p>
+      </a>
+    </section>
+
+    <section class="box_item sale_icon">
+      <a href="item001.html">
+        <div class="image_wrapper"><img src="images/anohino.jpg" alt="" /></div>
+        <h3>あの日の揺れロングセーラー</h3>
+        <p>￥31,000</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="item001.html">
+        <div class="image_wrapper"><img src="images/deaino.jpg" alt="" /></div>
+        <h3>出会いのワンピース</h3>
+        <p>￥28,500</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="item001.html">
+        <div class="image_wrapper"><img src="images/kamisamano.jpg" alt="" /></div>
+        <h3>神様のワンピース</h3>
+        <p>￥41,500</p>
+      </a>
+    </section>
+    <section class="box_item sale_icon">
+      <a href="item001.html">
+        <div class="image_wrapper"><img src="images/mutekino.jpg" alt="" /></div>
+        <h3>無敵のロングコート</h3>
+        <p>￥62,000</p>
+      </a>
+    </section>
+    
+
+    
+
+  </div>
+
+  
+
+  <!-- ////////// スライドスクリプト ////////// -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.skippr.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#theTarget").skippr();
+    });
+
+    $("#theTarget").skippr({
+      // スライドタイプ ("fade" or "slide")
+      transition: 'fade',
+      // 次のスライドまでの移行時間(単位ミリ秒)
+      speed: 1000,
+      // イージングの種類(http://easings.net/ja)
+      easing: 'easeOutQuart',
+      // ナヴ・タイプ("block" or "bubble")
+      navType: 'bubble',
+      // 子要素の種類("div" or "img")
+      childrenElementType: 'div',
+      // 矢印の表示有無(trueで表示)
+      arrows: false,
+      // スライドショーの自動再生
+      autoPlay: true,
+      // 自動再生時のスライド移行時間(単位ミリ秒)
+      autoPlayDuration: 2000,
+      // 矢印キーの有効化
+      keyboardOnAlways: false,
+      // 一枚目のスライドに戻る矢印の表示の有無
+      hclassePrevious: true,
+    });
+  </script>
+
+<section id="new">
+
+<h2>イベント予定<br><span>出演イベント</span></h2>
+<dl>
+<dt>2021/04/02</dt>
+<dd>shabondama 2022AW ceremony。<span class="newicon">NEW</span></dd>
+<dt>2021/04/02</dt>
+<dd>踊ってみた×ファッションショーイベント。</dd>
+<dt>2021/01/03</dt>
+<dd>みゆちー生誕出演</dd>
+<dt>2020/10/20</dt>
+<dd>2022AW制作決定</dd>
+
+
+</dl>
+<p class="r">&raquo;&nbsp;<a href="#">過去ログ</a></p>
+
+</section>
+<!--/#new-->
+
+<section>
+
+
+
+<!--/#contents-->
+
+<footer>
+<ul class="icon">
+<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="#"><img src="images/icon_youtube.png" alt="TouTube"></a></li>
+</ul>
+<small>Copyright&copy; <a href="index.html">Sample Gallery</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+</div>
+<!--/#container-->
+
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理-->
+<script>
+open_close("menubar_hdr", "menubar");
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
