@@ -4,10 +4,14 @@ header {
   height: 50px;
 }
 
+html,
 body {
-  margin: 0px;
-  padding: 0px;
-  width: 1250px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* 横スクロールを防ぐ */
 }
 
 /* ハンバーガーメニュー */
@@ -116,13 +120,13 @@ nav li a {
 
 video {
   margin-top: 8px;
-  margin-right: 4px;
+  margin-right: 40px;
   margin-bottom: 8px;
-  margin-left: 150px;
+  margin-left: 70px;
 }
 
 .service {
-  margin-left: 250px;
+  margin-left: 20px;
   text-align: center;
 }
 
@@ -131,3 +135,35 @@ video {
   margin-left: 720px;
   margin-top: -300%; /* 上方向にネガティブマージンを取る */
 }
+.works {
+  top: 630px;
+
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+}
+.pas {
+  filter: blur(5px);
+}
+.aey {
+  filter: blur(5px);
+}
+
+.hor {
+  filter: blur(5px);
+}
+.kinen {
+  filter: blur(5px);
+}
+.workss {
+  top: 830px;
+
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+}
+
